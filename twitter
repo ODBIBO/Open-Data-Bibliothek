@@ -1,0 +1,14 @@
+#bei Twitter anmelden
+
+import twitter
+
+auth = twitter.oauth.OAuth(Twitter['Access Token'],
+                           Twitter['Access Token Secret'],
+                           Twitter['Consumer Key'],
+                           Twitter['Consumer Secret'])
+
+twitter_api = twitter.Twitter(auth=auth)
+
+# twitter_api ist jetzt eine definierte Variable
+
+print(twitter_api)
